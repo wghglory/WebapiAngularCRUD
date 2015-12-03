@@ -1,0 +1,23 @@
+1. Bundle: Install-Package Microsoft.AspNet.Web.Optimization; 
+	add bundleconfig.cs; 
+	register it in global; 
+	Create Layout view; 
+	add System.web.optimization in View's webconfig.
+ 
+2. EF: create employee class using code first;
+	create employeeContext;
+	create employdbInitializer and go back to employeeContext to set this initializer
+
+3. MVC controller: add controller using EF, 
+	private EmployeeContext db = new EmployeeContext();
+	this should get all mock data;
+	then we can just leave View() action and delete others, get ready to use Api and angular
+
+4. create api controller
+
+5. Angular: in layout page specify ng-app="empApp",
+	create app folder in script folder,
+	app.js is module, inject "empApp",
+	create service and controller
+
+6. Home/index page use controller...
